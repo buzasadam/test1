@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<class xmlns="http://xml.phpdox.net/src" full="App\DateCalculator" namespace="App" name="DateCalculator" abstract="false" final="false" start="17" end="194">
-  <file path="/home/buzasadam/php_projects/my-project-dir/build/../src/App" file="DateCalculator.php" realpath="/home/buzasadam/php_projects/my-project-dir/src/App/DateCalculator.php" size="6466" time="2021-03-18T14:11:14+00:00" unixtime="1616076674" sha1="1a7df9248f9d370b95cbdee118364ae832ac9ba9" relative="App/DateCalculator.php"/>
+<class xmlns="http://xml.phpdox.net/src" full="App\DateCalculator" namespace="App" name="DateCalculator" abstract="false" final="false" start="17" end="213">
+  <file path="/home/buzasadam/php_projects/my-project-dir/build/../src/App" file="DateCalculator.php" realpath="/home/buzasadam/php_projects/my-project-dir/src/App/DateCalculator.php" size="7264" time="2021-03-23T12:10:30+00:00" unixtime="1616501430" sha1="a0a32e76df9345c8c28f1078168935e35ae79dd1" relative="App/DateCalculator.php"/>
   <docblock>
     <description compact="DateCalculator  Emarsys homework - Due Date Calculator                 WORKDAY_START and WORKDAY_END can be flexible, but the solution doesn't handle that situation                 when submit time is out of working time period"/>
     <author value="Ádám Buzás"/>
@@ -22,7 +22,7 @@
       <type full="Other\Log" namespace="Other" name="Log"/>
     </parameter>
   </constructor>
-  <method name="calculateDueDate" start="45" end="58" abstract="false" final="false" static="false" visibility="public">
+  <method name="calculateDueDate" start="45" end="64" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description compact="calculateDueDate Incoming data prepare and running due date calculation"/>
       <param description="submit date and time" type="object" variable="$submittime">
@@ -36,7 +36,7 @@
     </parameter>
     <parameter name="turnaroundtime" byreference="false" variadic="false" type="int"/>
   </method>
-  <method name="submittimeCorrection" start="67" end="96" abstract="false" final="false" static="false" visibility="public">
+  <method name="submittimeCorrection" start="73" end="102" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description compact="submittimeCorrection Correcting submittime, when it is out of working day"/>
       <param description="submit date and time" type="object" variable="$submittime">
@@ -53,7 +53,7 @@
       <type full="DateTime" namespace="" name="DateTime"/>
     </parameter>
   </method>
-  <method name="timeToEndOfDay" start="104" end="111" abstract="false" final="false" static="false" visibility="public">
+  <method name="timeToEndOfDay" start="110" end="124" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description compact="timeToEndOfDay  Calculates the remaining time to the end of the workday"/>
       <param description="submit date and time" type="object" variable="$submittime">
@@ -70,7 +70,7 @@
       <type full="DateTime" namespace="" name="DateTime"/>
     </parameter>
   </method>
-  <method name="minutesToEndOfDay" start="118" end="121" abstract="false" final="false" static="false" visibility="public">
+  <method name="minutesToEndOfDay" start="131" end="135" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description compact="minutesToEndOfDay  Calculates the remaining time to the end of the workday in minutes"/>
       <param description="remaining time to the end of the workday" type="object" variable="$time">
@@ -83,7 +83,7 @@
       <type full="DateInterval" namespace="" name="DateInterval"/>
     </parameter>
   </method>
-  <method name="daysToShift" start="129" end="136" abstract="false" final="false" static="false" visibility="public">
+  <method name="daysToShift" start="143" end="150" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description compact="daysToShift   Calculates how many days have to shift the due date depending on workday start and end time"/>
       <param description="total left minutes of the period excluding the current day" type="Int" variable="$leftminutes"/>
@@ -92,7 +92,7 @@
     <return type="array" nullable="false"/>
     <parameter name="leftminutes" byreference="false" variadic="false" type="int"/>
   </method>
-  <method name="calculateDate" start="146" end="173" abstract="false" final="false" static="false" visibility="public">
+  <method name="calculateDate" start="160" end="192" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description compact="calculateDate  Calculates the due date whether have to shift working day or not. If due date would be happen on weekend days then                automatically shift to next day (till the nex workday)"/>
       <param description="submit date and time" type="object" variable="$submittime">
@@ -107,7 +107,7 @@
     </parameter>
     <parameter name="turnaroundtime" byreference="false" variadic="false" type="int"/>
   </method>
-  <method name="nextWorkDay" start="180" end="193" abstract="false" final="false" static="false" visibility="public">
+  <method name="nextWorkDay" start="199" end="212" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description compact="nextWorkDay  finds the nex workday depending on received current date and time"/>
       <param description="current date and time" type="object" variable="$time">

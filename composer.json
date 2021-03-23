@@ -25,5 +25,8 @@
         "symfony/browser-kit": "5.x-dev",
         "symfony/css-selector": "5.x-dev",
         "phing/phing": "3.0.x-dev"
+    },
+    "config": {
+       "preferred-install": "dist"
     }
 }

@@ -17,8 +17,8 @@
       </ConcreteClasses>
       <AbstractClasses/>
       <DependsUpon>
-        <Package></Package>
         <Package>Other</Package>
+        <Package></Package>
       </DependsUpon>
       <UsedBy/>
     </Package>

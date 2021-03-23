@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1616503421">
-  <project timestamp="1616503421">
+<coverage generated="1616505187">
+  <project timestamp="1616505187">
     <file name="/home/buzasadam/php_projects/my-project-dir/src/App/DateCalculator.php">
       <class name="App\DateCalculator" namespace="global">
         <metrics complexity="14" methods="8" coveredmethods="6" conditionals="0" coveredconditionals="0" statements="69" coveredstatements="64" elements="77" coveredelements="70"/>
