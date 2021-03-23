@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<crap_result>
+  <project/>
+  <timestamp>2021-03-23 13:43:42</timestamp>
+  <stats>
+    <name>Method Crap Stats</name>
+    <methodCount>13</methodCount>
+    <crapMethodCount>0</crapMethodCount>
+    <crapLoad>0</crapLoad>
+    <totalCrap>69.22</totalCrap>
+    <crapMethodPercent>0</crapMethodPercent>
+  </stats>
+  <methods>
+    <method>
+      <package>App</package>
+      <className>App\DateCalculator</className>
+      <methodName>__construct</methodName>
+      <methodSignature>__construct(Other\Log $log)</methodSignature>
+      <fullMethod>__construct(Other\Log $log)</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>App</package>
+      <className>App\DateCalculator</className>
+      <methodName>calculateDueDate</methodName>
+      <methodSignature>calculateDueDate(DateTime $submittime, int $turnaroundtime)</methodSignature>
+      <fullMethod>calculateDueDate(DateTime $submittime, int $turnaroundtime)</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>App</package>
+      <className>App\DateCalculator</className>
+      <methodName>submittimeCorrection</methodName>
+      <methodSignature>submittimeCorrection(DateTime $submittime): DateTime</methodSignature>
+      <fullMethod>submittimeCorrection(DateTime $submittime): DateTime</fullMethod>
+      <crap>3.1</crap>
+      <complexity>3</complexity>
+      <coverage>77.78</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>App</package>
+      <className>App\DateCalculator</className>
+      <methodName>timeToEndOfDay</methodName>
+      <methodSignature>timeToEndOfDay(DateTime $submittime): DateInterval</methodSignature>
+      <fullMethod>timeToEndOfDay(DateTime $submittime): DateInterval</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>App</package>
+      <className>App\DateCalculator</className>
+      <methodName>minutesToEndOfDay</methodName>
+      <methodSignature>minutesToEndOfDay(DateInterval $time): int</methodSignature>
+      <fullMethod>minutesToEndOfDay(DateInterval $time): int</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>App</package>
+      <className>App\DateCalculator</className>
+      <methodName>daysToShift</methodName>
+      <methodSignature>daysToShift(int $leftminutes): array</methodSignature>
+      <fullMethod>daysToShift(int $leftminutes): array</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>App</package>
+      <className>App\DateCalculator</className>
+      <methodName>calculateDate</methodName>
+      <methodSignature>calculateDate(DateTime $submittime, int $turnaroundtime): string</methodSignature>
+      <fullMethod>calculateDate(DateTime $submittime, int $turnaroundtime): string</fullMethod>
+      <crap>3</crap>
+      <complexity>3</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>App</package>
+      <className>App\DateCalculator</className>
+      <methodName>nextWorkDay</methodName>
+      <methodSignature>nextWorkDay(DateTime $time)</methodSignature>
+      <fullMethod>nextWorkDay(DateTime $time)</fullMethod>
+      <crap>3.07</crap>
+      <complexity>3</complexity>
+      <coverage>80</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Container</package>
+      <className>Container\DIContainer</className>
+      <methodName>set</methodName>
+      <methodSignature>set($abstract, $concrete)</methodSignature>
+      <fullMethod>set($abstract, $concrete)</fullMethod>
+      <crap>6</crap>
+      <complexity>2</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Container</package>
+      <className>Container\DIContainer</className>
+      <methodName>get</methodName>
+      <methodSignature>get($abstract, $parameters)</methodSignature>
+      <fullMethod>get($abstract, $parameters)</fullMethod>
+      <crap>6</crap>
+      <complexity>2</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Container</package>
+      <className>Container\DIContainer</className>
+      <methodName>resolve</methodName>
+      <methodSignature>resolve($concrete, $parameters)</methodSignature>
+      <fullMethod>resolve($concrete, $parameters)</fullMethod>
+      <crap>20</crap>
+      <complexity>4</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Container</package>
+      <className>Container\DIContainer</className>
+      <methodName>getDependencies</methodName>
+      <methodSignature>getDependencies($parameters)</methodSignature>
+      <fullMethod>getDependencies($parameters)</fullMethod>
+      <crap>20</crap>
+      <complexity>4</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Other</package>
+      <className>Other\Log</className>
+      <methodName>m_log</methodName>
+      <methodSignature>m_log($arMsg)</methodSignature>
+      <fullMethod>m_log($arMsg)</fullMethod>
+      <crap>3.05</crap>
+      <complexity>3</complexity>
+      <coverage>81.82</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+  </methods>
+</crap_result>

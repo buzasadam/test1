@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="" tests="5" assertions="5" errors="0" warnings="0" failures="0" skipped="0" time="0.013821">
+    <testsuite name="php-jenkins-example" tests="5" assertions="5" errors="0" warnings="0" failures="0" skipped="0" time="0.013821">
+      <testsuite name="DateCalculatorTest" file="/home/buzasadam/php_projects/my-project-dir/tests/DateCalculatorTest.php" tests="5" assertions="5" errors="0" warnings="0" failures="0" skipped="0" time="0.013821">
+        <testcase name="testCalculationZeroTurnAround" class="DateCalculatorTest" classname="DateCalculatorTest" file="/home/buzasadam/php_projects/my-project-dir/tests/DateCalculatorTest.php" line="14" assertions="1" time="0.005522"/>
+        <testcase name="testCalculationSameDay" class="DateCalculatorTest" classname="DateCalculatorTest" file="/home/buzasadam/php_projects/my-project-dir/tests/DateCalculatorTest.php" line="30" assertions="1" time="0.001938"/>
+        <testcase name="testCalculationNextDay" class="DateCalculatorTest" classname="DateCalculatorTest" file="/home/buzasadam/php_projects/my-project-dir/tests/DateCalculatorTest.php" line="46" assertions="1" time="0.002011"/>
+        <testcase name="testCalculationNextSeveralDay" class="DateCalculatorTest" classname="DateCalculatorTest" file="/home/buzasadam/php_projects/my-project-dir/tests/DateCalculatorTest.php" line="62" assertions="1" time="0.002143"/>
+        <testcase name="testCalculationNextWeek" class="DateCalculatorTest" classname="DateCalculatorTest" file="/home/buzasadam/php_projects/my-project-dir/tests/DateCalculatorTest.php" line="78" assertions="1" time="0.002208"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>
