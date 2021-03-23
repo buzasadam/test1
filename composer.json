@@ -1,0 +1,29 @@
+{
+    "name": "buzasadam/my-project",
+    "description": "Independent PHP project",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.0.0",
+        "php-di/php-di": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/App/",
+            "Other\\": "src/Other/",
+            "Container\\": "src/Container/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9",
+        "phpmd/phpmd": "@stable",
+        "squizlabs/php_codesniffer": "4.0.x-dev",
+        "sebastian/phpcpd": "6.0.x-dev",
+        "phploc/phploc": "7.0.x-dev",
+        "pdepend/pdepend": "2.x-dev",
+        "theseer/phpdox": "dev-master",
+        "symfony/browser-kit": "5.x-dev",
+        "symfony/css-selector": "5.x-dev",
+        "phing/phing": "3.0.x-dev"
+    }
+}
