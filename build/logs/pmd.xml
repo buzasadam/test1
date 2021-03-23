@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pmd version="@package_version@" timestamp="2021-03-23T10:46:01+00:00">
+  <file name="/home/buzasadam/php_projects/my-project-dir/src/App/DateCalculator.php">
+    <violation beginline="159" endline="159" rule="UnusedLocalVariable" ruleset="Unused Code Rules" externalInfoUrl="https://phpmd.org/rules/unusedcode.html#unusedlocalvariable" priority="3">
+      Avoid unused local variables such as '$hours'.
+    </violation>
+  </file>
+  <file name="/home/buzasadam/php_projects/my-project-dir/src/Other/Log.php">
+    <violation beginline="9" endline="34" rule="CamelCaseMethodName" ruleset="Controversial Rules" package="Other" externalInfoUrl="#" class="Log" method="m_log" priority="1">
+      The method m_log is not named in camelCase.
+    </violation>
+  </file>
+</pmd>

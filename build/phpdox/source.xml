@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<source xmlns="http://xml.phpdox.net/src">
+  <dir name="/home/buzasadam/php_projects/my-project-dir/src">
+    <dir name="Other">
+      <file name="Log.php" size="1099" time="2021-03-19T08:35:34+00:00" unixtime="1616142934" sha1="e96c485f82a8f62afb2690fde62375d89fd73fa3" xml="tokens/Other/Log.php.xml"/>
+    </dir>
+    <dir name="Container">
+      <file name="DIContainer.php" size="2494" time="2021-03-19T08:07:26+00:00" unixtime="1616141246" sha1="8cb127194de21b98679925387c5a27643b6893e2" xml="tokens/Container/DIContainer.php.xml"/>
+    </dir>
+    <dir name="App">
+      <file name="DateCalculator.php" size="6466" time="2021-03-18T14:11:14+00:00" unixtime="1616076674" sha1="1a7df9248f9d370b95cbdee118364ae832ac9ba9" xml="tokens/App/DateCalculator.php.xml"/>
+    </dir>
+  </dir>
+</source>

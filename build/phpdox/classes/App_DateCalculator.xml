@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\DateCalculator" namespace="App" name="DateCalculator" abstract="false" final="false" start="17" end="194">
+  <file path="/home/buzasadam/php_projects/my-project-dir/build/../src/App" file="DateCalculator.php" realpath="/home/buzasadam/php_projects/my-project-dir/src/App/DateCalculator.php" size="6466" time="2021-03-18T14:11:14+00:00" unixtime="1616076674" sha1="1a7df9248f9d370b95cbdee118364ae832ac9ba9" relative="App/DateCalculator.php"/>
+  <docblock>
+    <description compact="DateCalculator  Emarsys homework - Due Date Calculator                 WORKDAY_START and WORKDAY_END can be flexible, but the solution doesn't handle that situation                 when submit time is out of working time period"/>
+    <author value="Ádám Buzás"/>
+  </docblock>
+  <constant type="integer" name="WORKDAY_START" value="9"/>
+  <constant type="integer" name="WORKDAY_END" value="17"/>
+  <constant type="string" name="TIME_FORMAT" value="'Y-m-d H:i'"/>
+  <member name="minutes" default="0" type="integer" visibility="private" static="false" line="23"/>
+  <member name="hours" default="0" type="integer" visibility="private" static="false" line="24"/>
+  <member name="log" visibility="private" static="false" line="26"/>
+  <constructor name="__construct" start="33" end="36" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="__construct receiving outside parameters"/>
+      <param description="log handler instance" type="object" variable="$log">
+        <type full="Other\Log" namespace="Other" name="Log"/>
+      </param>
+    </docblock>
+    <parameter name="log" byreference="false" variadic="false" type="object">
+      <type full="Other\Log" namespace="Other" name="Log"/>
+    </parameter>
+  </constructor>
+  <method name="calculateDueDate" start="45" end="58" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="calculateDueDate Incoming data prepare and running due date calculation"/>
+      <param description="submit date and time" type="object" variable="$submittime">
+        <type full="DateTime" namespace="" name="DateTime"/>
+      </param>
+      <param description="turnaround time in hours" type="Int" variable="$turnaroundtime"/>
+      <return description="due date and time formatted with TIME_FORMAT" type="string"/>
+    </docblock>
+    <parameter name="submittime" byreference="false" variadic="false" type="object">
+      <type full="DateTime" namespace="" name="DateTime"/>
+    </parameter>
+    <parameter name="turnaroundtime" byreference="false" variadic="false" type="int"/>
+  </method>
+  <method name="submittimeCorrection" start="67" end="96" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="submittimeCorrection Correcting submittime, when it is out of working day"/>
+      <param description="submit date and time" type="object" variable="$submittime">
+        <type full="DateTime" namespace="" name="DateTime"/>
+      </param>
+      <return description="submit date and time corrected to workday period" type="object">
+        <type full="DateTime" namespace="" name="DateTime"/>
+      </return>
+    </docblock>
+    <return type="object" nullable="false">
+      <type full="DateTime" namespace="" name="DateTime"/>
+    </return>
+    <parameter name="submittime" byreference="false" variadic="false" type="object">
+      <type full="DateTime" namespace="" name="DateTime"/>
+    </parameter>
+  </method>
+  <method name="timeToEndOfDay" start="104" end="111" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="timeToEndOfDay  Calculates the remaining time to the end of the workday"/>
+      <param description="submit date and time" type="object" variable="$submittime">
+        <type full="DateTime" namespace="" name="DateTime"/>
+      </param>
+      <return description="Remaining time" type="object">
+        <type full="DateInterval" namespace="" name="DateInterval"/>
+      </return>
+    </docblock>
+    <return type="object" nullable="false">
+      <type full="DateInterval" namespace="" name="DateInterval"/>
+    </return>
+    <parameter name="submittime" byreference="false" variadic="false" type="object">
+      <type full="DateTime" namespace="" name="DateTime"/>
+    </parameter>
+  </method>
+  <method name="minutesToEndOfDay" start="118" end="121" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="minutesToEndOfDay  Calculates the remaining time to the end of the workday in minutes"/>
+      <param description="remaining time to the end of the workday" type="object" variable="$time">
+        <type full="DateInterval" namespace="" name="DateInterval"/>
+      </param>
+      <return description="remaining time in minutes" type="Int"/>
+    </docblock>
+    <return type="int" nullable="false"/>
+    <parameter name="time" byreference="false" variadic="false" type="object">
+      <type full="DateInterval" namespace="" name="DateInterval"/>
+    </parameter>
+  </method>
+  <method name="daysToShift" start="129" end="136" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="daysToShift   Calculates how many days have to shift the due date depending on workday start and end time"/>
+      <param description="total left minutes of the period excluding the current day" type="Int" variable="$leftminutes"/>
+      <return description="$result      array containing days to shift and remaining time for the last working day of period" type="array"/>
+    </docblock>
+    <return type="array" nullable="false"/>
+    <parameter name="leftminutes" byreference="false" variadic="false" type="int"/>
+  </method>
+  <method name="calculateDate" start="146" end="173" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="calculateDate  Calculates the due date whether have to shift working day or not. If due date would be happen on weekend days then                automatically shift to next day (till the nex workday)"/>
+      <param description="submit date and time" type="object" variable="$submittime">
+        <type full="DateTime" namespace="" name="DateTime"/>
+      </param>
+      <param description="turnaround time in hours" type="Int" variable="$turnaroundtime"/>
+      <return description="due date and time formatted with TIME_FORMAT" type="string"/>
+    </docblock>
+    <return type="string" nullable="false"/>
+    <parameter name="submittime" byreference="false" variadic="false" type="object">
+      <type full="DateTime" namespace="" name="DateTime"/>
+    </parameter>
+    <parameter name="turnaroundtime" byreference="false" variadic="false" type="int"/>
+  </method>
+  <method name="nextWorkDay" start="180" end="193" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="nextWorkDay  finds the nex workday depending on received current date and time"/>
+      <param description="current date and time" type="object" variable="$time">
+        <type full="DateTime" namespace="" name="DateTime"/>
+      </param>
+      <return description="$time next workday id needed" type="object">
+        <type full="DateTime" namespace="" name="DateTime"/>
+      </return>
+    </docblock>
+    <parameter name="time" byreference="false" variadic="false" type="object">
+      <type full="DateTime" namespace="" name="DateTime"/>
+    </parameter>
+  </method>
+</class>

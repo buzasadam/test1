@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Container\DIContainer" namespace="Container" name="DIContainer" abstract="false" final="false" start="11" end="113">
+  <file path="/home/buzasadam/php_projects/my-project-dir/build/../src/Container" file="DIContainer.php" realpath="/home/buzasadam/php_projects/my-project-dir/src/Container/DIContainer.php" size="2494" time="2021-03-19T08:07:26+00:00" unixtime="1616141246" sha1="8cb127194de21b98679925387c5a27643b6893e2" relative="Container/DIContainer.php"/>
+  <docblock>
+    <description compact="Class Container"/>
+  </docblock>
+  <member name="instances" default="" type="array" visibility="protected" static="false" line="16">
+    <docblock>
+      <description/>
+      <var type="array"/>
+    </docblock>
+  </member>
+  <method name="set" start="22" end="28" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param variable="$abstract"/>
+      <param type="null" variable="$concrete"/>
+    </docblock>
+    <parameter name="abstract" byreference="false" variadic="false" type="{unknown}"/>
+    <parameter name="concrete" byreference="false" variadic="false" type="{unknown}" default="NULL"/>
+  </method>
+  <method name="get" start="37" end="45" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param variable="$abstract"/>
+      <param type="array" variable="$parameters"/>
+      <return type="mixed">
+        <type full="mixed" array="false" name="mixed" namespace=""/>
+        <type full="null" array="false" name="null" namespace=""/>
+        <type full="object" array="false" name="object" namespace=""/>
+      </return>
+      <throws type="object">
+        <type full="Container\Exception" namespace="Container" name="Exception"/>
+      </throws>
+    </docblock>
+    <parameter name="abstract" byreference="false" variadic="false" type="{unknown}"/>
+    <parameter name="parameters" byreference="false" variadic="false" type="array" default=""/>
+    <inline>
+      <comment value="if we don't have it, just register it" line="39"/>
+    </inline>
+  </method>
+  <method name="resolve" start="56" end="81" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="resolve single"/>
+      <param variable="$concrete"/>
+      <param variable="$parameters"/>
+      <return type="mixed">
+        <type full="mixed" array="false" name="mixed" namespace=""/>
+        <type full="object" array="false" name="object" namespace=""/>
+      </return>
+      <throws type="object">
+        <type full="Container\Exception" namespace="Container" name="Exception"/>
+      </throws>
+    </docblock>
+    <parameter name="concrete" byreference="false" variadic="false" type="{unknown}"/>
+    <parameter name="parameters" byreference="false" variadic="false" type="{unknown}"/>
+    <inline>
+      <comment value="check if class is instantiable" line="63"/>
+      <comment value="get class constructor" line="68"/>
+      <comment value="get constructor params" line="75"/>
+      <comment value="get new instance with dependencies resolved" line="79"/>
+    </inline>
+  </method>
+  <method name="getDependencies" start="91" end="112" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="get all dependencies resolved"/>
+      <param variable="$parameters"/>
+      <return type="array"/>
+      <throws type="object">
+        <type full="Container\Exception" namespace="Container" name="Exception"/>
+      </throws>
+    </docblock>
+    <parameter name="parameters" byreference="false" variadic="false" type="{unknown}"/>
+  </method>
+</class>

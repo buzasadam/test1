@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <title>phpDox - App\DateCalculator</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" media="screen"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+  </head>
+  <body>
+    <nav class="topnav">
+      <ul>
+        <li>
+          <div class="logo"><span>/**</span>phpDox</div>
+        </li>
+        <li class="separator">
+          <a href="../index.html">Overview</a>
+        </li>
+        <li class="separator">
+          <a href="../namespaces.html">Namespaces</a>
+        </li>
+        <li>
+          <a href="../classes.html">Classes</a>
+        </li>
+        <li class="separator">
+          <a href="../source/index.html">Source</a>
+        </li>
+      </ul>
+    </nav>
+    <div id="mainstage">
+      <div class="box">
+        <ul class="breadcrumb">
+          <li>
+            <a href="../index.html">Overview</a>
+          </li>
+          <li class="separator">
+            <a href="../classes.html">Classes</a>
+          </li>
+          <li class="separator">
+            <a href="../classes.html#App">App</a>
+          </li>
+          <li class="separator">DateCalculator</li>
+        </ul>
+      </div>
+      <nav class="box">
+        <ul>
+          <li>
+            <a href="#introduction">Introduction</a>
+          </li>
+          <li>
+            <a href="#synopsis">Synopsis</a>
+          </li>
+          <li>
+            <a href="#constants">Constants</a>
+          </li>
+          <li>
+            <a href="#members">Members</a>
+          </li>
+          <li>
+            <a href="#methods">Methods</a>
+          </li>
+          <li>
+            <a href="../source/App/DateCalculator.php.html#line17">Source</a>
+          </li>
+        </ul>
+      </nav>
+      <section>
+        <h1 id="introduction"><small>App\</small>DateCalculator</h1>
+        <h4>DateCalculator  Emarsys homework - Due Date Calculator                 WORKDAY_START and WORKDAY_END can be flexible, but the solution doesn't handle that situation                 when submit time is out of working time period</h4>
+        <p/>
+        <ul>
+          <li>Author: Ádám Buzás</li>
+        </ul>
+        <h2 id="synopsis">Synopsis</h2>
+        <div class="synopsis">class DateCalculator
+            {<br/><ul class="none"><li>// constants</li><li>const WORKDAY_START = 9;</li><li>const WORKDAY_END = 17;</li><li>const TIME_FORMAT = 'Y-m-d H:i';</li></ul><ul class="none"><li>// members</li><li>private integer <a href="#members">$minutes</a> =
+                        0;
+                    </li><li>private integer <a href="#members">$hours</a> =
+                        0;
+                    </li><li>private  <a href="#members">$log</a>;
+                    </li></ul><ul class="none"><li>// methods</li><li>public void <a title="App\DateCalculator" href="../classes/App_DateCalculator/__construct.html">__construct</a>()
+                    </li><li>public string <a title="App\DateCalculator" href="../classes/App_DateCalculator/calculateDueDate.html">calculateDueDate</a>()
+                    </li><li>public <span title="DateTime">DateTime</span> <a title="App\DateCalculator" href="../classes/App_DateCalculator/submittimeCorrection.html">submittimeCorrection</a>()
+                    </li><li>public <span title="DateInterval">DateInterval</span> <a title="App\DateCalculator" href="../classes/App_DateCalculator/timeToEndOfDay.html">timeToEndOfDay</a>()
+                    </li><li>public int <a title="App\DateCalculator" href="../classes/App_DateCalculator/minutesToEndOfDay.html">minutesToEndOfDay</a>()
+                    </li><li>public array <a title="App\DateCalculator" href="../classes/App_DateCalculator/daysToShift.html">daysToShift</a>()
+                    </li><li>public string <a title="App\DateCalculator" href="../classes/App_DateCalculator/calculateDate.html">calculateDate</a>()
+                    </li><li>public DateTime <a title="App\DateCalculator" href="../classes/App_DateCalculator/nextWorkDay.html">nextWorkDay</a>()
+                    </li></ul>
+
+            }<br/></div>
+        <h2 id="constants">Constants</h2>
+        <table class="styled">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td id="WORKDAY_START">WORKDAY_START</td>
+              <td>9</td>
+            </tr>
+            <tr>
+              <td id="WORKDAY_END">WORKDAY_END</td>
+              <td>17</td>
+            </tr>
+            <tr>
+              <td id="TIME_FORMAT">TIME_FORMAT</td>
+              <td>'Y-m-d H:i'</td>
+            </tr>
+          </tbody>
+        </table>
+        <h2 id="members">Members</h2>
+        <div class="styled members">
+          <h4>private</h4>
+          <ul class="members">
+            <li id="hours">
+              <strong>$hours</strong>
+            </li>
+            <li id="log">
+              <strong>$log</strong>
+            </li>
+            <li id="minutes">
+              <strong>$minutes</strong>
+            </li>
+          </ul>
+        </div>
+        <h2 id="methods">Methods</h2>
+        <div class="styled">
+          <h4>public</h4>
+          <ul>
+            <li id="__construct"><a title="App\DateCalculator" href="../classes/App_DateCalculator/__construct.html">__construct()</a>
+                — __construct receiving outside parameters</li>
+            <li id="calculateDate"><a title="App\DateCalculator" href="../classes/App_DateCalculator/calculateDate.html">calculateDate()</a>
+                — calculateDate  Calculates the due date whether have to shift working day or not. If due date would be happen on weekend days then                automatically shift to next day (till the nex workday)</li>
+            <li id="calculateDueDate"><a title="App\DateCalculator" href="../classes/App_DateCalculator/calculateDueDate.html">calculateDueDate()</a>
+                — calculateDueDate Incoming data prepare and running due date calculation</li>
+            <li id="daysToShift"><a title="App\DateCalculator" href="../classes/App_DateCalculator/daysToShift.html">daysToShift()</a>
+                — daysToShift   Calculates how many days have to shift the due date depending on workday start and end time</li>
+            <li id="minutesToEndOfDay"><a title="App\DateCalculator" href="../classes/App_DateCalculator/minutesToEndOfDay.html">minutesToEndOfDay()</a>
+                — minutesToEndOfDay  Calculates the remaining time to the end of the workday in minutes</li>
+            <li id="nextWorkDay"><a title="App\DateCalculator" href="../classes/App_DateCalculator/nextWorkDay.html">nextWorkDay()</a>
+                — nextWorkDay  finds the nex workday depending on received current date and time</li>
+            <li id="submittimeCorrection"><a title="App\DateCalculator" href="../classes/App_DateCalculator/submittimeCorrection.html">submittimeCorrection()</a>
+                — submittimeCorrection Correcting submittime, when it is out of working day</li>
+            <li id="timeToEndOfDay"><a title="App\DateCalculator" href="../classes/App_DateCalculator/timeToEndOfDay.html">timeToEndOfDay()</a>
+                — timeToEndOfDay  Calculates the remaining time to the end of the workday</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <span>Generated using phpDox 0.12.0-27-geb943cb - Copyright (C) 2010 - 2021 by Arne Blankerts and Contributors</span>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Other\Log" namespace="Other" name="Log" abstract="false" final="false" start="5" end="36">
+  <file path="/home/buzasadam/php_projects/my-project-dir/build/../src/Other" file="Log.php" realpath="/home/buzasadam/php_projects/my-project-dir/src/Other/Log.php" size="1099" time="2021-03-19T08:35:34+00:00" unixtime="1616142934" sha1="e96c485f82a8f62afb2690fde62375d89fd73fa3" relative="Other/Log.php"/>
+  <constant type="string" name="LOG_PATH" value="&quot;/home/buzasadam/php_projects/Excercise/log/&quot;"/>
+  <method name="m_log" start="9" end="34" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="arMsg" byreference="false" variadic="false" type="{unknown}"/>
+    <inline>
+      <comment value="define empty string" line="11"/>
+      <comment value="get the event occur date time,when it will happened" line="13"/>
+      <comment value="if message is array type" line="15"/>
+      <comment value="create file with current date name" line="26"/>
+      <comment value="open the file append mode,dats the log file will create day wise" line="28"/>
+      <comment value="write the info into the file" line="30"/>
+      <comment value="close handler" line="32"/>
+    </inline>
+  </method>
+</class>

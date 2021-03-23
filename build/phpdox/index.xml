@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index xmlns="http://xml.phpdox.net/src" basedir="/home/buzasadam/php_projects/my-project-dir/src">
+  <namespace name="Other">
+    <class name="Log" src="Other/Log.php" xml="classes/Other_Log.xml"/>
+  </namespace>
+  <namespace name="Container">
+    <class name="DIContainer" src="Container/DIContainer.php" description="Class Container" xml="classes/Container_DIContainer.xml"/>
+  </namespace>
+  <namespace name="App">
+    <class name="DateCalculator" src="App/DateCalculator.php" description="DateCalculator  Emarsys homework - Due Date Calculator                 WORKDAY_START and WORKDAY_END can be flexible, but the solution doesn't handle that situation                 when submit time is out of working time period" xml="classes/App_DateCalculator.xml"/>
+  </namespace>
+</index>
